@@ -1,0 +1,25 @@
+.gradient-border-button {
+    position: relative;
+    padding: 16px 32px; /* ⬆ Increased padding */
+    font-size: 18px; /* ⬆ Increased font size */
+    font-weight: 700; /* ⬆ Bolder text */
+    color: #333;
+    background-color: white;
+    border: none;
+    border-radius: 60px; /* ⬆ Slightly larger border radius */
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.gradient-border-button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 5px; /* ⬆ Slightly thicker border */
+    border-radius: 60px; /* ⬆ Match the button radius */
+    background: linear-gradient(90deg, #CFA2E8, #637FEA);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}

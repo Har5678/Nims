@@ -1,0 +1,49 @@
+/* Hide horizontal overflow globally */
+html, body {
+    overflow-x: hidden;
+}
+
+/* Background scrolling animation */
+@keyframes moveBackground {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Smooth scrolling effect */
+.bg-container {
+    display: flex;
+    width: 200%; /* Ensures smooth transition */
+}
+
+.bg-moving {
+    display: flex;
+    gap: 0; /* Remove gaps */
+    animation: moveBackground 30s linear infinite;
+    will-change: transform;
+    color: #bea2d2;
+}
+
+/* Button styling */
+.scrolling-button {
+    flex: 1;
+    min-width: 12.5%; /* 100% / 8 buttons */
+    padding: 10px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #fafafa;
+    border: 2px solid rgb(58, 58, 58);
+    border-radius: 60px;
+    color: rgb(91, 91, 91);
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.scrolling-button:hover {
+    background-color: #2980b9;
+    color: #ffffff;
+}
+
