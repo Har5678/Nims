@@ -16,6 +16,10 @@ const University = () => {
     { name: "SHUBHAM UNIVERSITY", image: assets.Shubham },
     { name: "KALINGA UNIVERSITY", image: assets.kalinga },
     { name: "MAHAVEER UNIVERSITY", image: assets.Mahaveer },
+    { name: "SUNDER DEEP GROUP OF INSTITUTIONS", image: assets.SDGI },
+    { name: "COLLEGE OF ENGINEERING ROORKEE", image: assets.Coer },
+    { name: "DHAMMA DIPA INTERNATIONAL BUDDHIST UNIVERSITY", image: assets.Dbibu },
+    { name: "IMS UNISON", image: assets.Ims },
   ];
 
   return (
@@ -50,23 +54,27 @@ const University = () => {
             {List.map((university, index) => (
               <div
                 key={index}
-                className="bg-white shadow-md rounded-lg p-3 flex flex-col items-center text-center border border-gray-200"
+                className="bg-white shadow-md rounded-lg p-3 border border-gray-200 flex flex-col justify-between h-64"
               >
-                <h3 className="text-sm sm:text-base font-semibold text-gray-900 mb-2">{university.name}</h3>
-                <div className="w-24 h-24 sm:w-32 sm:h-32 bg-gray-100 flex items-center justify-center rounded overflow-hidden">
-                  {university.image ? (
-                    <img
-                      src={university.image}
-                      alt={university.name}
-                      className="w-full h-auto object-cover"
-                    />
-                  ) : (
-                    <span className="text-gray-500 text-xs">No Image Available</span>
-                  )}
+                <div className="flex flex-col items-center text-center">
+                  <h3 className="text-sm sm:text-base font-semibold text-gray-900 mb-2">
+                    {university.name}
+                  </h3>
+                  <div className="w-24 h-24 sm:w-32 sm:h-32 bg-gray-100 flex items-center justify-center rounded overflow-hidden">
+                    {university.image ? (
+                      <img
+                        src={university.image}
+                        alt={university.name}
+                        className="w-full h-auto object-contain"
+                      />
+                    ) : (
+                      <span className="text-gray-500 text-xs">No Image</span>
+                    )}
+                  </div>
                 </div>
                 <button
                   onClick={() => navigate("/register")}
-                  className="text-xs sm:text-sm mt-3 px-4 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+                  className="text-xs sm:text-sm mt-4 px-4 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
                 >
                   Apply Now
                 </button>

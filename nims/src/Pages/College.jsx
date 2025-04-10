@@ -38,7 +38,7 @@ const College = () => {
         <div className="flex flex-wrap items-center gap-4">
           <h1 className="text-xl sm:text-3xl md:text-4xl font-bold text-gray-900">All Colleges</h1>
           <span className="text-xs sm:text-sm md:text-base border border-gray-300 px-3 py-1 rounded-full text-gray-900 font-semibold">
-            🎓 13 Colleges
+            🎓 {colleges.length} Colleges
           </span>
         </div>
 
@@ -54,35 +54,33 @@ const College = () => {
           {colleges.map((college, index) => (
             <div
               key={index}
-              className="bg-white border border-gray-200 rounded-lg shadow-sm p-3 flex flex-col items-center text-center hover:shadow-md transition"
+              className="bg-white border border-gray-200 rounded-2xl shadow-sm p-4 flex flex-col items-center justify-between hover:shadow-md transition-all duration-300"
             >
               {/* Image */}
               {college.image ? (
                 <img
                   src={college.image}
                   alt={college.name}
-                  className="w-full h-24 sm:h-32 lg:h-40 object-contain rounded-lg"
+                  className="w-full h-32 sm:h-36 object-contain rounded-xl"
                 />
               ) : (
-                <div className="w-full h-24 sm:h-32 lg:h-40 flex items-center justify-center bg-gray-100 rounded-lg">
-                  <span className="text-gray-500 text-xs">No Image Available</span>
+                <div className="w-full h-32 sm:h-36 flex items-center justify-center bg-gray-100 rounded-xl">
+                  <span className="text-gray-400 text-sm">No Image</span>
                 </div>
               )}
 
               {/* Title */}
-              <h3 className="text-xs sm:text-sm md:text-base font-semibold mt-3 text-gray-800 px-1">
+              <h3 className="text-sm sm:text-base font-semibold mt-3 text-center text-gray-800 line-clamp-2">
                 {college.name}
               </h3>
 
               {/* Apply Button */}
-              <div className="mt-auto">
-                <button
-                  onClick={() => navigate("/register")}
-                  className="mt-3 px-4 py-1 sm:px-6 sm:py-2 text-xs sm:text-sm bg-blue-600 text-white rounded hover:bg-blue-700 transition"
-                >
-                  Apply Now
-                </button>
-              </div>
+              <button
+                onClick={() => navigate("/register")}
+                className="mt-4 w-full py-1.5 sm:py-2 text-sm bg-blue-600 text-white rounded-full hover:bg-blue-700 transition"
+              >
+                Apply Now
+              </button>
             </div>
           ))}
         </div>

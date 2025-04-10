@@ -52,11 +52,20 @@ import NimsLogo from "./NimsLogo.jpg"
 import Coer from "./Coer.jpeg"
 import Dbibu from "./Dbibu.jpeg"
 import Fip from "./Fip.jpeg"
-import HRIT from "./HRIT.JPEG"
+import Hrit from "./Hrit.jpeg"
 import Ims from "./Ims.webp"
 import JP from "./JP.jpeg"
 import MSM from "./MSM.jpeg"
 import SDGI from "./SDGI.jpeg"
+import Aktu from "./Aktu.jpeg"
+import Bte from "./Bte.jpeg"
+import Ccs from "./Ccs.jpg"
+import Cert from "./Cert.jpeg"
+import Divine from "./Divine.png"
+import Mahalaxmi from "./Mahalaxmi.jpeg"
+import Mind from "./Mind.png"
+import Venk from "./Venk.jpeg"
+import Mit from "./Mit.png"
 
 
 export const assets={
@@ -114,9 +123,18 @@ export const assets={
     Coer,
     Dbibu,
     Fip,
-    HRIT,
+    Hrit,
     Ims,
     JP,
     MSM,
-    SDGI
+    SDGI,
+    Aktu,
+    Ccs,
+    Bte,
+    Cert,
+    Divine,
+    Mahalaxmi,
+    Mind,
+    Venk,
+    Mit
 }
