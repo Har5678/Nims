@@ -59,6 +59,7 @@ import MSM from "./MSM.jpeg"
 import SDGI from "./SDGI.jpeg"
 
 
+
 export const assets={
     Banner1,
     background,
@@ -118,5 +119,7 @@ export const assets={
     Ims,
     JP,
     MSM,
-    SDGI
+    SDG,
+    NimsLogo
 }
+
