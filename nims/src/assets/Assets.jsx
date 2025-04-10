@@ -68,6 +68,7 @@ import Venk from "./Venk.jpeg"
 import Mit from "./Mit.png"
 
 
+
 export const assets={
     Banner1,
     background,
@@ -127,6 +128,7 @@ export const assets={
     Ims,
     JP,
     MSM,
+<<<<<<< HEAD
     SDGI,
     Aktu,
     Ccs,
@@ -138,3 +140,9 @@ export const assets={
     Venk,
     Mit
 }
+=======
+    SDG,
+    NimsLogo
+}
+
+>>>>>>> 8c1f56a68317752012953a3c9b3600ea32b92abd
