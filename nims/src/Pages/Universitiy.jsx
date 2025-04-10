@@ -11,15 +11,16 @@ const University = () => {
     { name: "BOARD OF OPEN SCHOOLING & SKILL EDUCATION", image: assets.Board },
     { name: "MANGALAYATAN UNIVERSITY", image: assets.mangalyatan },
     { name: "SHOBHIT DEEMED UNIVERSITY", image: assets.Shobhit },
-    { name: "SURESH GYAN VIHAR UNIVERSITY", image: assets.Suresh },
-    { name: "J.S UNIVERSITY", image: assets.Jas },
     { name: "SHUBHAM UNIVERSITY", image: assets.Shubham },
-    { name: "KALINGA UNIVERSITY", image: assets.kalinga },
     { name: "MAHAVEER UNIVERSITY", image: assets.Mahaveer },
     { name: "SUNDER DEEP GROUP OF INSTITUTIONS", image: assets.SDGI },
-    { name: "COLLEGE OF ENGINEERING ROORKEE", image: assets.Coer },
+    { name: "COER UNIVERSITY", image: assets.Coer },
     { name: "DHAMMA DIPA INTERNATIONAL BUDDHIST UNIVERSITY", image: assets.Dbibu },
     { name: "IMS UNISON", image: assets.Ims },
+    { name: "CCS UNIVERSITY", image: assets.Ccs },
+    { name: "AKTU LUCKNOW", image: assets.Aktu },
+    { name: "BTE LUCKNOW", image: assets.Bte },
+    { name: "HRIT UNIVERSITY", image: assets.Hrit },
   ];
 
   return (

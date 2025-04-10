@@ -21,6 +21,14 @@ const College = () => {
     { name: "Mahendra Institute of Technology", image: assets.Mahindra },
     { name: "Bharat Institute of Technology", image: assets.Bit },
     { name: "Panchwati Institute of Engineering and Technology", image: assets.Panchwati },
+    { name: "Fort College Of Pharmacy", image: assets.Fip },
+    { name: "Mahalaxmi Group Of Institutions", image: assets.Mahalaxmi },
+    { name: "JP Group", image: assets.JP },
+    { name:"MSM Meerut", image: assets.MSM},
+    { name: "Divine Law College Meerut", image: assets.Divine },
+    { name: "CERT College", image: assets.Cert },
+    { name: "MIIT College", image: assets.Mit },
+    
   ];
 
   return (
